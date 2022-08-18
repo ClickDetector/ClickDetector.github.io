@@ -39,3 +39,21 @@
 
 <body background="https://corporate.target.com/_media/TargetCorp/Press/B-roll%20and%20Press%20Materials/Logos/Target_Bullseye-Logo_Red.jpg?preset=640w">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <html>
+<head>
+    <title>click detect</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    int clicks = 0;
+    function click() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <button type="button" onClick="click()">ME</button>
+    <p>Clicks: <a id="clicks">0</a></p>
+
+</body></html>
